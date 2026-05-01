@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <llink rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <section>
+    <section class="container">
         <h2>
-            Lastest news
+            Latest news
         </h2>
-        <ul class="articles">
-            <li>
-                <article>
-                    <div>
-                        <a href="#">developer.mozillas.org</a>
-                        <span>3 weeks ago</span>    
+        <ul class="list">
+            <li class="list-item">
+                <article class="list-article">
+                    <div class="list-article-header">
+                        <a class="list-article-link" href="#">developer.mozillas.org</a>
+                        <span class="list-article-span">3 weeks ago</span>
                     </div>
-                    <h3>
-                        <a href="#">Under the hood of MDN's new frontend</a>                    
-                    </h3>
-                    <p>
-                    You may have spotted that MDN has a new frontend. There's plenty happening under the surface, so let's unpack the technologies we chose, the architectural decisions we made, and why we did a rebuild at all. 
-                    </p>
-                </article> 
+                    <div class="list-article-body">
+                        <h3 class="list-article-title">
+                            <a href="#">Under the hood of MDN's new frontend</a>
+
+                        </h3>
+                        <p>
+                            You may have spotted that MDN has a new frontend. There's plenty happening under the
+                            surface, so let's unpack the technologies we chose, the architectural decisions we made, and
+                            why we did a rebuild at all.
+                        </p>
+                    </div>
+                </article>
             </li>
-            <li>
-                <article>
-                    <div>
-                        <a href="#">developer.mozillas.org</a>
-                        <span>6 months ago</span>    
+            <li class="list-item">
+                <article class="list-article">
+                    <div class="list-article-header">
+                        <a class="list-article-link" href="#">developer.mozillas.org</a>
+                        <span class="list-article-span">6 months ago</span>
                     </div>
-                    <h3>
-                        <a href="#">Image formats: Codecs and compression tools</a>                    
-                    </h3>
-                    <p>
-                    Image compression involves countless trade-offs between quality, size, and speed. In this final part of the series, we experiment with codecs, metrics, and tools to find practical ways to balance efficiency and visual fidelity. 
-                    </p>
-                </article> 
-            </li>  
+                    <div class="list-article-body">
+                        <h3 class="list-article-title">
+                            <a href="#">Image formats: Codecs and compression tools</a>
+                        </h3>
+                        <p>
+                            Image compression involves countless trade-offs between quality, size, and speed. In this
+                            final part of the series, we experiment with codecs, metrics, and tools to find practical
+                            ways to balance efficiency and visual fidelity.
+                        </p>
+                    </div>
+                </article>
+            </li>
         </ul>
     </section>
 
 
 
 </body>
+
 </html>

@@ -1,12 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* VARIABLES */
+:root{
+    --font-primary:"Inter", sans-serif;
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.5rem;
+    --color-text-primary: #fff;    
+    --color-background-primary: #191a1c;
+    --border-primary: #51565d;
+}   
+/* CONFIGURACIONES GENERALES */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--color-text-primary);
+    background-color: var(--color-background-primary);
+    font-family: var(--font-primary);
 }
-html{
-    font-size: 62.5%;
-}
-body{
-    font-size: 1.6rem;
+/* ESTILOS GLOBALES */
+ul{
+    list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h2{
+    font-size: var(--font-size-large);
+    margin: 2rem 0;
+    font-weight: 500;
+
+}
+
+h3{
+    font-size: var(--font-size-medium);
+}
+
+p{
+    background: linear-gradient (294deg, #000000, #ffffff)
+}
+p,
+.list-article-link,
+.list-article-span{    
+    font-size: var(--font-size-small);
+}
+/*  */
+/* ANCHO DE VISUALIZACIÓN */
+.container{
+    width: 768px;
+    margin: 0 auto;
+}
+/*  */
+/* DISPLAY FLEX PARA TARJETAS */
+.list{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 165px;
+}
+/*  */
+.list-item{
+    border: 1px solid var(--border-primary);
+    border-radius: 0.5rem;
+    padding: 16px;
+}
+/*  */
+/* FLEX ORANIZACION DE TEXTO HEADER */
+.list-article-header{
+    display: flex;
+    justify-content: space-between;
+}
+/*  */
+.list-article-title{
+    margin: 8px 0 16px 0px;
+}
+/*  */
+/* FLEX ORANIZACION DE TEXTO BODY */
+.list-article-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
