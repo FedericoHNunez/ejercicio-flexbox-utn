@@ -47,7 +47,7 @@ p{
 }
 p,
 .list-article-link,
-.list-article-span{    
+.list-article-date{    
     font-size: var(--font-size-small);
 }
 /*  */
