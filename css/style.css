@@ -8,6 +8,7 @@
     --color-text-primary: #fff;    
     --color-background-primary: #191a1c;
     --border-primary: #51565d;
+    --base-line: 1.2;
 }   
 /* CONFIGURACIONES GENERALES */
 *{
@@ -35,7 +36,6 @@ h2{
     font-size: var(--font-size-large);
     margin: 2rem 0;
     font-weight: 500;
-
 }
 
 h3{
@@ -51,27 +51,30 @@ p,
     font-size: var(--font-size-small);
 }
 /*  */
+
 /* ANCHO DE VISUALIZACIÓN */
 .container{
     width: 768px;
     margin: 0 auto;
 }
 /*  */
+
 /* DISPLAY FLEX PARA TARJETAS */
 .list{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    height: 165px;
 }
-/*  */
 .list-item{
     border: 1px solid var(--border-primary);
     border-radius: 0.5rem;
     padding: 16px;
+    height: 163px;
+    overflow: hidden; /* oculta el contenido que se desborda */
 }
 /*  */
-/* FLEX ORANIZACION DE TEXTO HEADER */
+
+/* FLEX ORANIZACION DE TEXTO HEADER interno de la tarjeta */
 .list-article-header{
     display: flex;
     justify-content: space-between;
@@ -79,11 +82,18 @@ p,
 /*  */
 .list-article-title{
     margin: 8px 0 16px 0px;
+    min-height: calc(2em * var(--base-line)); /* limita la altura del título a 2 líneas */
 }
 /*  */
-/* FLEX ORANIZACION DE TEXTO BODY */
+/* FLEX ORANIZACION DE TEXTO BODY de la tarjeta */
 .list-article-body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.list-article-paragraph{
+    max-height: calc(3em * var(--base-line)); /* limita la altura del párrafo a 3 líneas */
+    min-height: calc(3em * var(--base-line)); /* limita la altura del párrafo a 3 líneas */
+    overflow: hidden; /* oculta el contenido que se desborda */
 }
