@@ -66,11 +66,11 @@ p,
     gap: 1rem;
 }
 .list-item{
-    position: relative;
+    flex : 1; /* cada tarjeta ocupa el mismo espacio disponible */
     border: 1px solid var(--border-primary);
     border-radius: 0.5rem;
+    position: relative;
     padding: 16px;
-    height: 163px;
     overflow: hidden; /* oculta el contenido que se desborda */
 }
 /*  */
