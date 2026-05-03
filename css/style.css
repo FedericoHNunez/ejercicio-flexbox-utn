@@ -95,7 +95,9 @@ p,
     overflow: hidden; /* oculta el contenido que se desborda */
 }
 
-.gradient{
+.list-article-paragraph::after{
+    content: "";
+    display: block;
     background: linear-gradient(90deg,rgba(25, 26, 28, 0.08) 0%, rgba(25, 26, 28, 1) 70%);
     position: absolute;
     bottom: 0;
