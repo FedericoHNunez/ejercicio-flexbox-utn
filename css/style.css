@@ -71,7 +71,16 @@ p,
     border-radius: 0.5rem;
     padding: 16px;
     height: 163px;
-    overflow: hidden; /* oculta el contenido que se desborda */
+    
+}
+.list-item::after{
+    content: "";
+    background: linear-gradient(90deg,rgba(25, 26, 28, 0.08) 0%, rgba(25, 26, 28, 1) 70%);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 200px;
+    height: 34px;
 }
 /*  */
 
@@ -97,13 +106,4 @@ p,
     max-height: calc(3em * var(--base-line)); /* limita la altura del párrafo a 3 líneas */
     min-height: calc(3em * var(--base-line)); /* limita la altura del párrafo a 3 líneas */
     overflow: hidden; /* oculta el contenido que se desborda */
-}
-
-.gradient{
-    background: linear-gradient(90deg,rgba(25, 26, 28, 0.08) 0%, rgba(25, 26, 28, 1) 70%);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 200px;
-    height: 36px;
 }
