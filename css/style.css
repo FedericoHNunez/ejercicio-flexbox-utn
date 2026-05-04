@@ -27,7 +27,6 @@ ul{
 a{
     text-decoration: none;
 }
-
 a:hover{
     text-decoration: underline;
 }
@@ -42,9 +41,6 @@ h3{
     font-size: var(--font-size-medium);
 }
 
-p{
-    background: linear-gradient (294deg, #000000, #ffffff)
-}
 p,
 .list-article-link,
 .list-article-date{    
@@ -66,9 +62,10 @@ p,
     gap: 1rem;
 }
 .list-item{
-    position: relative;
+    flex : 1; /* cada tarjeta ocupa el mismo espacio disponible */
     border: 1px solid var(--border-primary);
     border-radius: 0.5rem;
+    position: relative;
     padding: 16px;
     height: 163px;
     
@@ -80,7 +77,7 @@ p,
     bottom: 5px;
     right: 5px;
     width: 200px;
-    height: 34px;
+    height: 31px;
 }
 /*  */
 
